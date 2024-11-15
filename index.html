@@ -41,9 +41,8 @@
                         <ul class="navbar-nav flex-grow-1 justify-content-between">
                             <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/felipe.garaggiola/">🥇instagram de creador 1.🥇</a></li>
                             <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/tiaggosandruss/">🥇instagram de creador 2.🥇</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#podcast-obra">¡PodCast de la Novela!</a></li>
-
-                            <li class="nav-item"><a class="nav-link" href="#item-1">!Parrafos Favoritos!</a></li>
+                            <h1>Los Saludos</h1>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ruletaModal">RULETA</button>
                             
                             <li class="nav-item"><a class="nav-link" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg></a></li>
                         </ul>
@@ -54,16 +53,44 @@
     </header>
     <!--fin navegador-->
 <main>
- 
-<!--inicio blog-->
-    <main class="container">
-      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-        <div class="col-lg-6 px-0">
-          <h1 class="display-4 fst-italic">Eugenio Lonesco</h1>
-          <p class="lead my-3">Pagina echa por: Felipe Garaggiola,Tiago Sandruss.</p>
-          
+  <!-- Modal de Ruleta -->
+  <div class="modal fade" id="ruletaModal" tabindex="-1" aria-labelledby="ruletaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ruletaModalLabel">Ruleta de Preguntas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <!-- Ruleta -->
+                <div class="ruleta" id="ruleta">
+                    <div class="segment" style="--angle: 0deg;"><span class="label">¿Quién es el autor?</span></div>
+                    <div class="segment" style="--angle: 72deg;"><span class="label">¿Qué es el teatro del absurdo?</span></div>
+                    <div class="segment" style="--angle: 144deg;"><span class="label">¿Cuándo nació Ionesco?</span></div>
+                    <div class="segment" style="--angle: 216deg;"><span class="label">¿Qué simboliza la obra?</span></div>
+                    <div class="segment" style="--angle: 288deg;"><span class="label">¿Qué inspiró a Ionesco?</span></div>
+                </div>
+                <!-- Botón para girar la ruleta -->
+                <button class="spin-btn" id="spin">Girar Ruleta</button>
+                <div class="arrow"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
         </div>
+    </div>
+</div>
+
+<!--inicio blog-->
+<main class="container">
+  <div id="inicio-blog" class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+      <img src="eugen lonesco.jpg" alt="Eugène Ionesco" class="rounded">
+      <div>
+          <h1 class="display-4 fst-italic">Eugen Lonesco</h1>
+          <p class="lead text-muted">Eugène Ionesco en vida</p>
       </div>
+  </div>
+</main>
       <!--fin blog-->
     <!--inicio primer post-->
       <div class="row mb-2">
@@ -71,7 +98,7 @@
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary-emphasis">Autor</strong>
-              <h3 class="mb-0">Eugenio Lonesco</h3>
+              <h3 class="mb-0">Eugen Lonesco</h3>
               <a href="#informacion-autor" class="icon-link gap-1 icon-link-hover stretched-link">
                 Leer ahora!!
                 <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
@@ -84,78 +111,10 @@
           </div>
         </div>
          <!--fin primer post-->
-        <!--inicio segunda post-->
-        <div class="col-md-6">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-success-emphasis">Parrafos Favoritos</strong>
-              <h3 class="mb-0">Los destacados de la obra "Los Aplausos"</h3>
-              
-              <p class="mb-auto">elegidos por el grupo.</p>
-              <a href="#item-1" class="icon-link gap-1 icon-link-hover stretched-link">
-                Continuar leyendo
-                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-              </a>
-            </div>
-            <!--fin segundo post-->
+       
           </main>
 
-  <!--inicio pagina anidada-->
-  <div class="row">
-    <div class="col-4">
-      <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-        <nav class="nav nav-pills flex-column">
-          <a class="nav-link" href="#item-1"></a>
-          <nav class="nav nav-pills flex-column">
-            <a class="nav-link ms-3 my-1" href="#item-1-1">La critica,La formalidad y las apariencias sociales.</a>
-            <a class="nav-link ms-3 my-1" href="#item-1-2">Reflexión sobre la naturaleza humana y el vacío existencial.</a>
-          </nav>
-          <a class="nav-link" href="#item-2">El saludo como símbolo de la incomunicacióna.></a>
-          <a class="nav-link" href="#item-3">Ironía y absurdo en la interacción humana:</a>
-          <nav class="nav nav-pills flex-column">
-          </nav>
-        </nav>
-      </nav>
-    </div>
   
-    <div class="col-8">
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
-        <div id="item-1">
-          <h4></h4>
-          <p></p>
-        </div>
-        <div id="item-1-1">
-          <h5>La critica,La formalidad y las apariencias sociales.</h5>
-          <p>La crítica a la formalidad y las apariencias sociales:
-            "Señoras, señores, les saludo a todos. Les saludo, en nombre de la dignidad, del honor y del sentido común. Les saludo a ustedes que me saludan, que saludan a sus semejantes, que son saludados por ellos, que saludan la vida con respeto y que saludan, por tanto, a la muerte, pues ambas son inseparables.”
-            
-            En este fragmento, Ionesco resalta la banalidad de las convenciones sociales y su absurda repetición. El saludo, que debería ser un acto de reconocimiento, se convierte en una cadena de formalidades vacías.</p>
-        </div>
-        <div id="item-1-2">
-          <h5>Reflexión sobre la naturaleza humana y el vacío existencial:</h5>
-          <p>“No sabemos ni por qué saludamos ni por qué nos saludan. Saludamos como si entendiéramos el mundo, cuando en realidad estamos tan perdidos como al nacer.”
-
-            Aquí, Ionesco profundiza en el tema del absurdo de la existencia, cuestionando el sentido de los actos cotidianos. La obra muestra cómo los gestos y palabras que usamos cada día pueden carecer de significado real.</p>
-        </div>
-        <div id="item-2">
-          <h4>El saludo como símbolo de la incomunicación:</h4>
-          <p>“Cuanto más saludamos, más nos alejamos. Los saludos no nos acercan, solo subrayan la distancia que nos separa.”
-
-            Este párrafo señala la paradoja de la comunicación humana en el teatro de Ionesco: aunque los saludos y palabras son formas de comunicación, en realidad enfatizan nuestra soledad y alienación.</p>
-        </div>
-        <div id="item-3">
-          <h4>Ironía y absurdo en la interacción humana:</h4>
-          <p>“A veces nos saludamos sin siquiera conocernos. Saludamos porque así lo dicta la costumbre, porque alguien nos ha enseñado que eso es lo que se hace.”
-
-            Ionesco usa el saludo como metáfora para explorar la falta de autenticidad en las relaciones humanas y la obediencia a normas sociales que no entendemos del todo.
-            
-            Estos extractos se encuentran en la obra Les Salutations, que fue publicada originalmente en francés. Puedes encontrarla en ediciones de obras completas de Ionesco o en recopilaciones de teatro del absurdo. Para acceder a estos textos en español, busca traducciones oficiales en editoriales especializadas en teatro.
-            </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--fin pagina anidada-->
 <!--inicio blog2-->
 <div class="row g-5">
     <div class="col-md-8">
@@ -200,15 +159,7 @@
         </font></font></p>
       </article>
 
-      <article class="blog-post">
-        <h2 id="podcast-obra">Podcast Hablando de la obra</h2>
-       <!-- <h2 class="display-5 link-body-emphasis mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Podcast hablando de la obra.</font></font></h2>-->
-        <p class="blog-post-meta"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 de noviembre por Enzo Funes y Milena Duschek. </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">podcast</font></font></a></p>
-
-        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">en este podcast se va a conversar sobre la obra los saludos de euqguenio lonesco. como recibimos las enseñanzas,las frases famosas y mucho mas!.</font></font></p>
-        <blockquote>
-
-      </article>
+     
 
       
 
@@ -222,6 +173,178 @@
     
   </div>
 <!--fin blog 2-->
+ <!-- Análisis de "Los Saludos" -->
+ <section id="analisis" class="mb-5">
+  <h2 class="text-danger">Análisis de "Los Saludos"</h2>
+  <p>
+      Esta obra aborda el tema de la incomunicación humana. Los personajes se enfrentan a situaciones absurdas
+      que reflejan la falta de conexión real entre ellos. La estructura de la obra destaca por sus diálogos ilógicos
+      y situaciones surrealistas, características del teatro del absurdo.
+  </p>
+</section>
+
+<!-- Preguntas de Discusión -->
+<section id="preguntas" class="mb-5">
+  <h2 class="text-info">Preguntas de Discusión</h2>
+  <ol>
+      <li><a href="#" data-bs-toggle="modal" data-bs-target="#respuesta1">¿Cómo representa "Los Saludos" el tema de la incomunicación?</a></li>
+      <li><a href="#" data-bs-toggle="modal" data-bs-target="#respuesta2">¿Qué elementos del teatro del absurdo están presentes en la obra?</a></li>
+      <li><a href="#" data-bs-toggle="modal" data-bs-target="#respuesta3">¿Cómo se conecta esta obra con otras de Eugène Ionesco?</a></li>
+  </ol>
+</section>
+</main>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="respuesta1" tabindex="-1" aria-labelledby="respuesta1Label" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="respuesta1Label">Respuesta a Pregunta 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+          <p>"Los Saludos" representa la incomunicación al mostrar personajes que, aunque están juntos, no logran conectar. Sus diálogos absurdos y vacíos resaltan cómo las interacciones cotidianas pueden carecer de sentido y verdadero entendimiento.</p>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="respuesta2" tabindex="-1" aria-labelledby="respuesta2Label" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="respuesta2Label">Respuesta a Pregunta 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+          <p>Los elementos del teatro del absurdo presentes en "Los Saludos" incluyen diálogos ilógicos, situaciones surrealistas y personajes desconectados. Todo esto refleja la alienación y la falta de comunicación genuina, características del estilo de Ionesco.</p>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="respuesta3" tabindex="-1" aria-labelledby="respuesta3Label" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="respuesta3Label">Respuesta a Pregunta 3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+          <p>"Los Saludos" se conecta con otras obras de Ionesco a través de sus temas de incomunicación y absurdo. Al igual que en "La cantante calva" y "La lección", Ionesco usa personajes y diálogos absurdos para explorar la desconexión humana.</p>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+  </div>
+</div>
+</div>
+<style>
+  h2 {
+      font-weight: bold;
+      font-size: 1.8rem;
+  }
+
+  #preguntas ol li a {
+      font-size: 1.2rem;
+  }
+
+  .modal-body {
+      font-size: 1.2rem;
+  }
+
+  #analisis p {
+      font-size: 1.2rem;
+  }
+
+  #inicio-blog {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espaciado entre imagen y texto */
+        }
+
+        #inicio-blog img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .modal-body {
+            text-align: center;
+        }
+        .ruleta {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: relative;
+            margin: 20px auto;
+            border: 8px solid #007bff;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .ruleta .segment {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background: transparent;
+            clip-path: polygon(100% 0, 0 0, 0 100%);
+            transform-origin: 100% 100%;
+        }
+
+        .ruleta .segment:nth-child(1) { background: #ff9999; transform: rotate(0deg); }
+        .ruleta .segment:nth-child(2) { background: #99ccff; transform: rotate(72deg); }
+        .ruleta .segment:nth-child(3) { background: #99ff99; transform: rotate(144deg); }
+        .ruleta .segment:nth-child(4) { background: #ffcc99; transform: rotate(216deg); }
+        .ruleta .segment:nth-child(5) { background: #cc99ff; transform: rotate(288deg); }
+
+        .ruleta .label {
+            position: absolute;
+            width: 60%;
+            height: 20px;
+            top: 40%;
+            left: 20%;
+            text-align: center;
+            font-size: 1rem;
+            transform: rotate(calc(var(--angle) + 36deg));
+            transform-origin: center;
+        }
+
+        .spin-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .spin-btn:hover {
+            background: #0056b3;
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 20px solid #ff0000;
+            position: absolute;
+            top: -20px;
+            left: calc(50% - 15px);
+        }
+       
+</style>
 
 
   <!--inicio footer-->
@@ -269,13 +392,30 @@
 </div>
 <!--fin de footer-->
 
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          var modal = new bootstrap.Modal(document.getElementById('modalTour'));
-          modal.show();
-        });
-      </script>
+      <!-- JavaScript -->
+    <script>
+      const ruleta = document.getElementById('ruleta');
+      const spinBtn = document.getElementById('spin');
+      let angle = 0;
 
+      spinBtn.addEventListener('click', () => {
+          // Genera un giro aleatorio entre 3 y 6 vueltas
+          const randomSpins = Math.floor(Math.random() * 360) + 1440;
+          angle += randomSpins;
+
+          // Gira la ruleta
+          ruleta.style.transition = 'transform 3s ease-out';
+          ruleta.style.transform = `rotate(${angle}deg)`;
+
+          // Resetea la posición final para nuevas rotaciones
+          setTimeout(() => {
+              const normalizedAngle = angle % 360; // Normaliza el ángulo entre 0 y 360
+              ruleta.style.transition = 'none';
+              ruleta.style.transform = `rotate(${normalizedAngle}deg)`;
+              angle = normalizedAngle; // Actualiza el ángulo
+          }, 3000);
+      });
+  </script>
 </body>
 </html>
  
